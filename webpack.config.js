@@ -29,7 +29,7 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				exclude: /node_modules/, 
-				loader: "style-loader!css-loader!autoprefixer-loader!sass-loader"
+				loader: "style-loader!css-loader!autoprefixer-loader!sass-loader?includePaths[]=" + path.resolve(__dirname, "./node_modules/compass-mixins/lib")},
 			}, 
 			{
 				test: /\.(png|jpg)$/,

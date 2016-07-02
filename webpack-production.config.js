@@ -1,3 +1,4 @@
+/* Use this command for production :: webpack --config webpack-production.config.js -p */
 var webpackStrip = require('strip-loader');
 var devConfig = require('./webpack.config.js');
 var stripLoader = {

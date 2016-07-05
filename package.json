@@ -4,7 +4,7 @@
   "description": "webpack demo",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --inline -d"
+    "start": "webpack-dev-server --inline -d & open http://localhost:8080/webpack-dev-server/index.html"
   },
   "author": "roshan",
   "license": "ISC",

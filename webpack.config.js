@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
 	context: path.resolve('source'),
-	entry: ["./utils.js","./app.js"],
+	entry: ["./utils.js","./main.js"],
 	output: {
 		path: path.resolve('build/'),
 		publicPath: '/public/assets/',

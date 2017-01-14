@@ -13,4 +13,4 @@ var Header = require('./components/common/header');
 ReactDOM.render(<div>
 		
 	
-	</div>, document.getElementById('react-container'));
+	</div>, document.getElementById('app'));

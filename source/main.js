@@ -1,16 +1,27 @@
+var style = require('./css/globalStyle.scss');
 
-require('./css/homepage.css');
-require('./css/shared.scss');
 
-//var React = require('react');
-//var ReactDOM = require('react-dom');
+var msg = require('./messages');
+import img1_tag from './image';
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+import {multiply} from './mathStuff';
 
-var Header = require('./components/common/header');
+var first_message = ()=> (`<p>${msg.hi} bla bla123 ${msg.event}</p>`);
 
-ReactDOM.render(<div>
-		
-	
-	</div>, document.getElementById('app'));
+var new_message = ()=> (`
+		${multiply(3,3)} ${first_message()}
+	`);
+
+function hello(){
+	console.log('hello world');
+	var app = document.getElementById('app');
+	app.innerHTML = new_message();
+}
+
+/* first entry function */
+hello();
+
+
+if(module.hot){
+	module.hot.accept();
+}

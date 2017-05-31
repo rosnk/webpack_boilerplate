@@ -1,0 +1,12 @@
+
+@-ms-viewport{
+	width: device-width;
+}
+
+
+@import "partials/smallest";
+
+
+@media print{
+	@import "partials/print";
+}
